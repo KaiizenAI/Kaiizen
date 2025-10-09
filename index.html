@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kaiizen AI – Automation Service & Portfolio</title>
+  <meta name="description" content="Kaiizen AI automation service overview and demo portfolio with Google Drive links." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b132b;
+      --card: #1c2541;
+      --soft: #3a506b;
+      --accent: #5bc0be;
+      --accent-2: #ffd166;
+      --text: #e6edf3;
+      --muted: #b7c4cf;
+      --ring: rgba(91,192,190,.45);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px; }
+    header {
+      display: grid; grid-template-columns: 1fr; gap: 16px; align-items: center; justify-items: start;
+      padding: 28px; margin-bottom: 10px; background: linear-gradient(135deg, rgba(91,192,190,.15), rgba(255,209,102,.08));
+      border: 1px solid rgba(255,255,255,.06); border-radius: 20px;
+    }
+    .logo { display: flex; align-items: center; gap: 12px; }
+    .logo svg { width: 36px; height: 36px; }
+    .title { font-size: 28px; font-weight: 700; letter-spacing: .2px; }
+    .sub { color: var(--muted); max-width: 70ch; line-height: 1.6; }
+
+    .cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 12px; font-weight: 600; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.06); transition: .2s ease; }
+    .btn:hover { transform: translateY(-1px); border-color: var(--ring); box-shadow: 0 8px 24px -8px rgba(2, 221, 216, .25); }
+    .btn.accent { background: var(--accent); color: #0a141f; border-color: transparent; }
+
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin-top: 24px; }
+    .card { grid-column: span 12; background: linear-gradient(180deg, rgba(28,37,65,.95), rgba(28,37,65,.85)); border: 1px solid rgba(255,255,255,.06); border-radius: 18px; padding: 18px; position: relative; overflow: hidden; }
+    @media (min-width: 700px) {
+      .card { grid-column: span 6; }
+    }
+    @media (min-width: 1000px) {
+      .card { grid-column: span 4; }
+    }
+
+    .badge { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; letter-spacing: .4px; color: #081019; background: var(--accent-2); border-radius: 999px; padding: 6px 10px; font-weight: 700; }
+
+    .card h3 { margin: 14px 0 8px; font-size: 18px; }
+    .card p { color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .card .actions { display: flex; gap: 10px; margin-top: 14px; }
+
+    .kicker { text-transform: uppercase; font-size: 12px; letter-spacing: .24em; color: var(--muted); margin: 8px 0 12px; }
+
+    .pill { display: inline-flex; gap: 8px; align-items: center; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.04); padding: 6px 10px; border-radius: 999px; font-size: 12px; color: var(--muted); }
+
+    footer { margin: 36px 0 20px; color: var(--muted); text-align: center; font-size: 13px; }
+
+    .decor { position: absolute; inset: -60px -100px auto auto; width: 180px; height: 180px; background: radial-gradient(closest-side, rgba(91,192,190,.25), rgba(91,192,190,0)); filter: blur(10px); pointer-events: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 16.9 6.2 19l1.1-6.5L2.6 8.8l6.5-.9L12 2z" stroke="var(--accent)" stroke-width="1.2"/>
+        </svg>
+        <div class="title">Kaiizen AI – Automation Service</div>
+      </div>
+      <p class="sub">
+        We build intelligent <strong>AI Agents</strong> that automate marketing, content, calls, image & video creation — fully integrated with Google, Meta, Telegram, CRM, and your own infrastructure. Below is a showcase of example agents (portfolio) you can view directly on Google Drive.
+      </p>
+      <div class="cta-row">
+        <a class="btn accent" href="#portfolio">View Portfolio</a>
+        <a class="btn" href="#about">About Services</a>
+      </div>
+    </header>
+
+    <section id="about" class="wrap-section">
+      <div class="kicker">About Kaiizen AI</div>
+      <div style="background: rgba(58,80,107,.25); border:1px solid rgba(255,255,255,.06); padding:18px; border-radius:16px;">
+        <ul style="margin:0; padding-left:18px; line-height:1.8;">
+          <li>Custom-designed AI Agents for real-world use (blog, social, voice, scraper, media).</li>
+          <li>Multi-channel automation: Google Maps/News, Instagram, Telegram, Website, CRM.</li>
+          <li>Reliable infrastructure: Docker/Nginx/Traefik, queue mode, scalable workers.</li>
+          <li>Security and logging: key masking, cost monitoring, and daily performance reports.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="portfolio" style="margin-top: 28px;">
+      <div class="kicker">Portfolio Demos</div>
+      <div class="grid">
+        <article class="card">
+          <div class="decor"></div>
+          <span class="badge">Content • Social</span>
+          <h3>Blog Post Agent</h3>
+          <p>Automatically generates short daily posts with optional images, SEO optimization, and scheduled publishing. Integrated with Telegram and Instagram.</p>
+          <div class="actions">
+            <a class="btn" href="https://drive.google.com/file/d/1WOIEJjPMSEsnCsijXDNbHPGLufHJ8YX3/view?usp=drive_link" target="_blank" rel="noopener">View on Google Drive</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="decor"></div>
+          <span class="badge">Research • Data</span>
+          <h3>News + Google Maps Scrapper Agent</h3>
+          <p>Fetches articles and business locations by keyword or industry, cleans the data, and prepares it for AI training or marketing campaigns.</p>
+          <div class="actions">
+            <a class="btn" href="https://drive.google.com/file/d/1KxncH5GT0npPPCgMkXV515lI_R611tWY/view?usp=drive_link" target="_blank" rel="noopener">View on Google Drive</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="decor"></div>
+          <span class="badge">Media • Video</span>
+          <h3>Create Video Agent</h3>
+          <p>Generates videos from prompts or images with flexible aspect ratios and quality settings. Automatically stores metadata and supports multi-platform export.</p>
+          <div class="actions">
+            <a class="btn" href="https://drive.google.com/file/d/1d4LArd_JllumTbfLUfxDzgX5U4eLkaMb/view?usp=drive_link" target="_blank" rel="noopener">View on Google Drive</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="decor"></div>
+          <span class="badge">Voice • Booking</span>
+          <h3>Front Office Agent</h3>
+          <p>Handles inbound and outbound AI calls, schedules appointments with real-time calendar sync, prevents double booking, and logs all conversations.</p>
+          <div class="actions">
+            <a class="btn" href="https://drive.google.com/file/d/17DXQ8p7QhahbOOyp8ioZ0cHVEzyKrcoM/view?usp=drive_link" target="_blank" rel="noopener">View on Google Drive</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="decor"></div>
+          <span class="badge">Image • Design</span>
+          <h3>Image Agent</h3>
+          <p>Creates and edits images while maintaining facial consistency and brand style. Supports white backgrounds and preset design templates.</p>
+          <div class="actions">
+            <a class="btn" href="https://drive.google.com/file/d/1Y3WpQv1nSmKxwsk4qltb5LWWQioU-ueM/view?usp=drive_link" target="_blank" rel="noopener">View on Google Drive</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top: 32px;">
+      <div class="kicker">Contact</div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <span class="pill">Website: <strong>&nbsp;Kaiizen.AI</strong></span>
+        <span class="pill">Email: <strong>&nbsp;hello@kaiizen.ai</strong></span>
+        <span class="pill">Telegram: <strong>&nbsp;@kaiizenai</strong></span>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Kaiizen AI. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
